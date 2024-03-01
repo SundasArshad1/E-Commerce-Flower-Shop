@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Home</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+.button {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 15px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+.readmore
+{
+  display:none;
+}
+</style>
+</head>
+<body>
+ <!-- ======= Header ======= -->
+ <header id="header" class="header fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1>Orchid<span>.</span></h1>
+    </a>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li class="dropdown"><a href="AreasWeServe.php"><span>Areas We Serve</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul>
+            <li><a href="Wedding.php">Wedding</a></li>
+            <li><a href="Anniversery.php">Anniversery</a></li>
+            <li><a href="Birthday.php">Birthday</a></li>
+          </ul>
+        </li>
+        <li><a href="customize.php">Customize</a></li>
+        <li><a href="FAQS.html">FAQS</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="Terms and Conditions.html">Term and Conditions</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Contact Me.html">Contact</a></li>
+      </ul>
+    </nav><!-- .navbar -->
+    <form method="get" action="search.php">
+      <input type="search" class="btn-book-a-table" placeholder="Search" name="search">
+     </form>
+
+  </div>
+</header><!-- End Header -->
+
+<script>
+  function Readmore1()
+  {
+     let read=document.getElementById("readmore1");
+     read.style.display="inline";
+     more1.style.display="none";
+     less1.style.display="inline";
+
+  }
+
+  function Readless1()
+  {
+     let read=document.getElementById("readmore1");
+     read.style.display="none";
+     more1.style.display="inline";
+     less1.style.display="none";
+
+  }
+  function Readmore2()
+  {
+     let read=document.getElementById("readmore2");
+     read.style.display="inline";
+     more2.style.display="none";
+     less2.style.display="inline";
+
+  }
+
+  function Readless2()
+  {
+     let read=document.getElementById("readmore2");
+     read.style.display="none";
+     more2.style.display="inline";
+     less2.style.display="none";
+
+  }
+  function Readmore3()
+  {
+     let read=document.getElementById("readmore3");
+     read.style.display="inline";
+     more3.style.display="none";
+     less3.style.display="inline";
+
+  }
+
+  function Readless3()
+  {
+     let read=document.getElementById("readmore3");
+     read.style.display="none";
+     more3.style.display="inline";
+     less3.style.display="none";
+
+  }
+</script>
+<div class="header">
+  <h2>Blog Name</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><a name="heading1">Riveting Facts About Flowers That You Never Knew!!</a></h2>
+      <h5> March 7, 2023</h5>
+      <div class="fakeimg" style="height:200px;"><img src="images/flower1.jpg" width="400" height="200"><br/></div>
+      <p></p>
+      <div>
+        <p>When we think of flowers, the first thing that comes to our mind is beauty, fragrance, and colors. But have you ever thought beyond these characteristics? Flowers hold more to them than what meets the eye. From their anatomy to their unique pollination strategies, flowers are a wonder in themselves. Here are some fascinating facts about flowers that you never knew.</p>
+        <input type="button" value="Read More" id="more1" class="button" onclick="Readmore1()">
+        
+      </div>
+<div class="readmore" id="readmore1">
+  <h3>The World's Largest Flower</h3>
+  The Rafflesia arnoldii is the world's largest flower that measures up to three feet in diameter and can weigh up to 15 pounds. It is found in Southeast Asian rainforests, including Malaysia, Indonesia, and the Philippines. It has a unique fragrance that is similar to rotting flesh, which is why it is also known as the "Corpse Flower."
+  
+ <h3> Flowers Have Distinct Scents</h3>
+  Flowers produce different scents to attract different pollinators. Bees are attracted to bright colors, while moths and bats are more likely to be attracted to stronger fragrances that are more similar to the smell of fruit or decaying matter.
+  
+  <h3>Flowers Are Used In Medicinal Treatments</h3>
+  Many flowers contain compounds that are used for medicinal purposes. For example, marigolds are used in wound healing, while lavender is used to reduce anxiety and promote relaxation.
+  
+  <h3>The Origin Of Flowering Plants</h3>
+  Flowering plants first appeared on Earth more than 140 million years ago. The oldest known fossil of a flowering plant dates back to the early Cretaceous period.
+  
+ <h3> Flowers Can Change Color</h3>
+  Some flowers can change color depending on the pH of the soil. For example, the hydrangea changes color from pink to blue depending on the acidity of the soil.
+  
+  <h3>Flowers Communicate</h3>
+  Flowers can communicate with each other and with pollinators in different ways. Some flowers use bright colors and fragrance to attract pollinators, while others can mimic the scent of female insects to attract males.
+
+ <h3>The Most Poisonous Flower</h3>
+  The most poisonous flower is the wolfsbane, which is also known as aconite. It contains a toxin that can be deadly if ingested or absorbed through the skin.
+
+ <h3>Flowers Have A Short Life Span</h3>
+  Most flowers have a short life span, lasting only a few days or weeks. However, some flowers, like the lotus, can remain in bloom for months.
+
+  <h3>Flowers Are Unisex</h3>
+  Some flowers, like the holly, are unisex and have both male and female reproductive parts. Meanwhile, others, like the poinsettia, have only one sex and need other flowers to reproduce.
+  
+  <h3>Conclusion</h3>
+  There is more to flowers than just colors and fragrances. These beautiful creations of nature have fascinating facts and stories attached to them. Flowers have successfully adapted themselves to the ever-changing environment, which makes them unique and magical. So, next time you admire a flower, take a moment to appreciate the wonder that it holds.</p>
+  <input type="button" value="Read Less" id="less1" class="button" onclick="Readless1()">
+</div>
+<div class="card">
+<h2><a name="heading2">Bloom Your Mood with the Power of Flowers</a></h2>
+<h5> December 2, 2022</h5>
+<div class="fakeimg" style="height:200px;"><img src="images/flower4.jpg" width="400" height="200"><br/></div>
+<div>
+  <p><br>Flowers are not only beautiful to look at, but they also possess immense power to uplift our mood. 
+    Scientific studies have shown that the presence of flowers in our surroundings can reduce stress, anxiety, and depression. 
+    Flowers have the power to create a positive environment that helps us feel calm, relaxed, and happy. 
+    Imagine waking up to a vase of vibrant sunflowers on your bedside table, or receiving a bouquet of red roses from someone special - the effect of flowers on our mood is both instant and long-lasting.
+     So next time you want to brighten up your mood, invest in some beautiful blooms and see the difference it makes.<br/>
+     Here are some ways to bloom your mood with the power of flowers:</p>
+  <input type="button" value="Read More" id="more2" class="button" onclick="Readmore2()">
+</div>
+
+<div class="readmore" id="readmore2">
+  <h3>Bring them into your home</h3> Place flowers in a vase on your dining table, coffee table, or anywhere you often spend your time at home. The beauty and fragrance of fresh blooms will instantly bring you joy.
+  Flowers have a unique ability to uplift your mood. The sight of colorful, fragrant blooms can instantly lift your spirits and make you feel happier. 
+   Whether you're feeling down on a rainy day or stressed out from work, flowers are the perfect way to brighten up your day.Whether you're feeling down on a rainy day or stressed out from work, flowers are the perfect way to brighten up your day.
+   
+  <h3>Make a bouquet to gift someone</h3> Flowers are a popular gift that can be given to congratulate someone or just to show them how much you value them. Creating and giving a bouquet can also increase your own mood as it creates positive interaction with the other person.
+   
+  <h3> Take a walk in a garden</h3>Gardens are incredibly beneficial in our lives, the scent of flowers and the colours can help awaken your senses and put you in a good mood. Going for a walk to a garden or surrounding yourself with beautiful flowers can help reduce stress and anxiety and leave you feeling energized and refreshed.
+   
+  <h3> Use flowers for meditation</h3> Incorporating flowers during your meditation can help increase your connection with self in moments of reflection and contemplation. The aromas and visuals of flowers can help provide a sense of peace and stillness.
+   
+   <br/>So head out to your local florist, pick up some fresh flowers, and enjoy the many benefits of their beauty and fragrance.</p>
+   <input type="button" value="Read Less" id="less2"  class="button" onclick="Readless2()">
+</div>
+        
+    </div>
+    <div class="card">
+        <h2><a name="heading3">Why Flowers are the Ultimate Mood-Boosters?</a></h2>
+        <h5>Sep 2, 2022</h5>
+        <div class="fakeimg" style="height:200px;"><img src="images/Capture.JPG"width="400" height="200"><br/></div>
+       
+        <div>
+          <p><br>Flowers have been known since ancient times for their therapeutic properties. Research also supports that flowers have a significant impact on our mental well-being and can contribute to improving our moods significantly. Here are some reasons why flowers are the ultimate mood-boosters:</p>
+            <input type="button" value="Read More" id="more3" class="button" onclick="Readmore3()">
+        </div>
+        <div class="readmore" id="readmore3">
+          <h3>They trigger positive emotions</h3> One of the most significant reasons why flowers improve our mood is that they trigger positive emotions. Studies reveal that being exposed to flowers stimulates various parts of the brain that control emotions leading to positive effects on people's psychological state.
+            
+          <h3>They help lower stress and anxiety</h3> Flowers are known to have a calming effect on people and can help lower symptoms of stress and anxiety. Their aromas and colors have a relaxed impact on your mind making you feel more at ease, which is essential for having good mental health.
+          
+          <h3>They help create natural connections</h3> Flowers have a profound effect on our social lives. When people receive flowers or try to source a floral arrangement for an event, it leads to a positive connection with nature as well as with the giver of the flowers. This natural, positive connection often leads to people being more open and more likely to communicate with one another.
+          
+          <h3>They help improve productivity</h3> We all have days where productivity seems like a distant dream, and motivation practically non-existent. Studies show that the presence of flowers can help increase productivity by enhancing alertness and concentration, leading to feelings of satisfaction and bursts of creativity.
+          
+         <h3>Conclusion</h3> In conclusion, flowers are a natural source to uplift our mood, providing a range of benefits such as reducing unhealthy stress levels, promoting feelings of calmness in anxiety, and helping establish positive interaction between people. Incorporating flowers in our lives not only adds a fresh look to our spaces but also provides a multitude of benefits helping to create an additional element of happiness into our daily lives.</p>
+         <input type="button"  value="Read Less" class="button" id="less3" onclick="Readless3()">
+        </div>
+  </div>
+</div>
+</div>
+<div class="rightcolumn">
+  <div class="card">
+    <h3>About Our Blog Page</h3>
+    <div class="fakeimg" ><img src="images/logos.png" width="250" height="150"><p>Welcome to our Fresh Flower selling website's blog page!<br/><br/> This space is dedicated to providing our customers with fresh ideas, tips, and inspiration surrounding the world of flowers. 
+      Our blog page exists to give you a glimpse of the beautiful and diverse world of flowers, where we will share our passion for nature and all things floral.<br/><br/>So, whether you're looking for a little inspiration, trying to learn something new, or simply want to know more about flowers and their significance, take a stroll through our blog page.
+       We can guarantee you won't be disappointed, and we hope that our blog brings you joy and happiness, just like the flowers we sell.<br/><br/> Happy reading!!!</p></div>
+   
+  </div>
+  <div class="card">
+    <h3>Recent Posts</h3>
+    <div class="fakeimg"><img src="images/flower1.jpg" width="250" height="150" ><br><p><a href="#heading1"><h4>Riveting Facts About Flowers That You Never Knew!!</h4></a></p></div>
+    <div class="fakeimg"><img src="images/flower4.jpg" width="250" height="150"><br><label ><a href="#heading2"><h4>Bloom Your Mood with the Power of Flowers.</h4></a></label></div>
+    <div class="fakeimg"><img src="images/Capture.JPG"width="250" height="150"><br><label ><a href="#heading3"><h4>Why Flowers are the Ultimate Mood-Boosters?</h4></a></label></div>
+  </div>
+</div>
+</div>
+      
+          
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+
+  <div class="container">
+    <div class="row gy-3">
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-geo-alt icon"></i>
+        <div>
+          <h4>Address</h4>
+          <p>
+            International Islamic University <br>
+           H10, Islamabad<br>
+          </p>
+        </div>
+  
+      </div>
+  
+      <div class="col-lg-3 col-md-6 footer-links d-flex">
+        <i class="bi bi-telephone icon"></i>
+        <div>
+          <h4>About Orchid</h4>
+          <p>
+            <strong>Who We Are?</strong> info@example.com<br>
+            <strong>Privacy Policy</strong> +1 5589 55488 55<br>
+            <strong>FAQS:</strong> info@example.com<br>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links d-flex">
+        <i class="bi bi-clock icon"></i>
+        <div>
+          <h4>Opening Hours</h4>
+          <p>
+            <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+            Sunday: Closed
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Follow Us</h4>
+        <div class="social-links d-flex">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Orchid</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+
+    </div>
+  </div>
+
+</footer><!-- End Footer -->
+<!-- End Footer -->
+
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
